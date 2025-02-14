@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre"><i class="fas fa-user"></i> Sobre</a></li>
+                    <li><a href="#habilidades"><i class="fas fa-laptop-code"></i> Habilidades</a></li>
+                    <li><a href="#projetos"><i class="fas fa-project-diagram"></i> Projetos</a></li>
+                    <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>📖 | Sobre Mim</h2>
+            <p>▶ Olá! Eu sou <strong><em>Edelmo Júnior</em></strong>, um desenvolvedor web apaixonado por criar soluções inovadoras e eficientes. Trabalho com Roblox Studio a mais de 5 anos, desevolvendo jogos para a comunidade poder jogar, com mais de 20k de visitas acumuladas, e sou um ótimo scripter e interface maker(UI Maker), com quase 2 anos de experiência na parte de interface e 5 anos na programação LUA, atualmente curso o técnico de informática e programação de computadores, comecei este ano.</p>
+            <p>▶ Além disso, sou um bom scripter, desenvolvi um script para um jogo chamado "Exército Brasileiro", que tem mais de 20k de visitas acumuladas.</p>
+            <p>▶ Meu objetivo é ser um líder técnico e um scripter, ajudando a comunidade Roblox crescer e ter um bom desempenho.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Minhas Habilidades</h2>
+            <div class="habilidade">
+                <i class="fab fa-lua"></i>
+                <h3>Programação em LUA</h3>
+                <p>Tenho <strong><em>4 anos de experiência</em></strong> em programação LUA, especialmente no desenvolvimento de interfaces no Roblox Studio.</p>
+            </div>
+            <div class="habilidade">
+                <i class="fas fa-code"></i>
+                <h3>Desenvolvimento Web</h3>
+                <p>Experiência em <strong><em>HTML, CSS e JavaScript</em></strong> para criar sites responsivos e dinâmicos.</p>
+            </div>
+            <div class="habilidade">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI Maker</h3>
+                <p>Desenvolvo interfaces para jogos no Roblox Studio, com experiência em <strong><em>Imagens 2D Low-Poly</em></strong>.</p>
+            </div>
+            <div class="habilidade">
+                <i class="fas fa-database"></i>
+                <h3>Banco de Dados</h3>
+                <p>Tenho experiência em <strong><em>DataStoreService</em></strong> para gerenciar dados em meus jogos dentro do Roblox.</p>
+            </div>
+            <!-- Adicione mais habilidades conforme necessário -->
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <h3>Acompanhe meus projetos abaixo:</h3>
+            <div class="projeto">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Exército Brasileiro - Ryder</h3>
+                <p>Fazendo uma mega update para o jogo dele, por enquanto em testes.</p>
+            </div>
+            <div class="projeto">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Exército Brasileiro - Luis</h3>
+                <p>Duas versões para o jogo dele feitas com sucesso V3 chegando em breve.</p>
+            </div>
+            <div class="projeto">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Parkour Extensive</h3>
+                <p>Já fiz também um jogo de Parkour para diversão dos jogadores de roblox.</p>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Você pode me encontrar em:</p>
+            <ul>
+                <li><a href="https://discord.gg/EbSPBnN6vM" target="_blank"><i class="fab fa-discord"></i>| Meu Servidor do Discord</a></li>
+                <!-- Adicione mais formas de contato conforme necessário -->
+            </ul>
+        </section>
+    </main> 
+
+    <footer>
+        <p>&copy; 2025 Portifólio do Tonin. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
