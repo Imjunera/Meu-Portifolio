@@ -8,14 +8,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-    color: #fff;
+    background: linear-gradient(135deg, #3f51b5, #9c27b0);
+    color: #ffffff;
     padding: 20px;
+    transition: background 0.3s, color 0.3s;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #673ab7;
+    color: #ffffff;
     padding: 10px 0;
     text-align: center;
     border-radius: 10px;
@@ -47,7 +48,7 @@ header h1 {
 header h1::after {
     content: '|';
     margin: 0 15px;
-    color: #fdbb2d;
+    color: #e1bee7;
 }
 
 nav ul {
@@ -61,7 +62,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -75,7 +76,7 @@ nav ul li a i {
 }
 
 nav ul li a:hover {
-    color: #fdbb2d;
+    color: #e1bee7;
 }
 
 main {
@@ -88,22 +89,28 @@ section {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+section.visible {
+    opacity: 1;
 }
 
 section h2 {
     margin-bottom: 20px;
-    color: #fdbb2d;
+    color: #e1bee7;
     font-size: 2em;
 }
 
-.habilidade, .projeto {
+.habilidade, .projeto, .ferramenta {
     margin-bottom: 20px;
 }
 
-.habilidade i, .projeto i {
+.habilidade i, .projeto i, .ferramenta i {
     font-size: 2em;
     margin-right: 10px;
-    color: #fdbb2d;
+    color: #e1bee7;
 }
 
 ul {
@@ -116,7 +123,7 @@ ul li {
 }
 
 ul li a {
-    color: #fdbb2d;
+    color: #e1bee7;
     text-decoration: none;
     font-weight: bold;
     display: flex;
@@ -129,15 +136,15 @@ ul li a i {
 }
 
 ul li a:hover {
-    color: #fff;
+    color: #ffffff;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
-    background: #333;
-    color: #fff;
+    background: #673ab7;
+    color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
@@ -185,8 +192,8 @@ footer p {
 
 /* Botão de alternância de tema */
 #theme-toggle {
-    background: #444;
-    color: #fff;
+    background: #009688;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -195,21 +202,21 @@ footer p {
 }
 
 #theme-toggle:hover {
-    background: #666;
+    background: #00796b;
 }
 
 /* Tema Escuro */
 body.dark-theme {
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #2c2c2c);
-    color: #fff;
+    background: linear-gradient(135deg, #212121, #424242);
+    color: #ffffff;
 }
 
 body.dark-theme header {
-    background: #222;
+    background: #333333;
 }
 
 body.dark-theme footer {
-    background: #222;
+    background: #333333;
 }
 
 body.dark-theme section {
